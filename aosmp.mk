@@ -15,16 +15,20 @@
 
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
-#Bootanimation res
-TARGET_BOOT_ANIMATION_RES := 720
+# Inherit common Android Go configurations
+#$(call inherit-product, build/target/product/go_defaults.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+export USE_CCACHE=1
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := aosp_osprey
+PRODUCT_NAME := aosmp_osprey
 PRODUCT_MODEL := MotoG3
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
+
+
+## MoonOS required flags
+TARGET_ARCH := arm
+TARGET_BOOT_ANIMATION_RES := 720
