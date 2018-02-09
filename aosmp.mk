@@ -19,6 +19,7 @@ $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 #$(call inherit-product, build/target/product/go_defaults.mk)
 
 export USE_CCACHE=1
+export ALLOW_MISSING_DEPENDENCIES=true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
