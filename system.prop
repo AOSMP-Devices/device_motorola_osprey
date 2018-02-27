@@ -13,3 +13,5 @@ ro.sf.lcd_density=280
 media.camera.ts.monotonic=1
 persist.camera.time.monotonic=1
 
+# Team MoonOS
+ro.aosmp.maintainer=Zilberto Junior(ZJRDroid)
